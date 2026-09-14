@@ -395,9 +395,10 @@ body {
   flex: 1;
   overflow: auto;
   padding: 1rem 1.1rem 2rem;
-  background:
-    radial-gradient(circle at 1px 1px, var(--line) 1px, transparent 1px);
-  background-size: 18px 18px;
+  /* Dot-grid removed: it sat directly behind dense JSON key/value rows and
+     hurt readability there (unlike the app-shell grid, which only shows
+     through open background areas). */
+  background: var(--panel);
 }
 
 .tree-root {
