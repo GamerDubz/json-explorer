@@ -444,19 +444,29 @@ export default function JsonExplorerPage() {
   return (
     <div className="min-h-screen flex flex-col bg-neutral-950 text-neutral-100 selection:bg-cyan-500 selection:text-white">
       {/* Top Header */}
-      <header className="border-b border-neutral-800 bg-neutral-900/60 backdrop-blur sticky top-0 z-30 px-6 py-3 flex items-center justify-between">
+      <header className="border-b border-slate-800 bg-slate-950/85 backdrop-blur-md sticky top-0 z-30 px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 font-mono text-sm">
-            {'{;}'}
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 via-blue-600 to-emerald-500 p-0.5 shadow-sm shadow-cyan-500/20 flex items-center justify-center">
+            <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+              <svg className="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M7 4a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2" />
+                <path d="M17 4a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2" />
+                <circle cx="12" cy="8" r="1" fill="currentColor" />
+                <circle cx="12" cy="12" r="1" fill="currentColor" />
+                <circle cx="12" cy="16" r="1" fill="currentColor" />
+              </svg>
+            </div>
           </div>
           <div>
-            <h1 className="text-base font-semibold leading-none flex items-center gap-2">
-              JSON Explorer
-              <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
-                v2.0
+            <div className="flex items-center gap-2">
+              <h1 className="text-base font-bold tracking-tight text-white leading-none">
+                JSON <span className="text-cyan-400">Explorer</span>
+              </h1>
+              <span className="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 font-mono">
+                Tree Studio
               </span>
-            </h1>
-            <p className="text-xs text-neutral-400 mt-0.5">Interactive JSON Inspector &amp; Structure Navigator</p>
+            </div>
+            <p className="text-[11px] text-slate-400 mt-0.5">High-performance JSON inspector, tree navigator &amp; schema parser</p>
           </div>
         </div>
 

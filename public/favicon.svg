@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="jsonGrad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#jsonGrad)" />
+  <rect x="5.5" y="5.5" width="21" height="21" rx="5" fill="#0A0F1D" />
+  <path d="M12 9C10.8954 9 10 9.89543 10 11V14C10 14.5523 9.55228 15 9 15C9.55228 15 10 15.4477 10 16V19C10 20.1046 10.8954 21 12 21" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" />
+  <path d="M20 9C21.1046 9 22 9.89543 22 11V14C22 14.5523 22.4477 15 23 15C22.4477 15 22 15.4477 22 16V19C22 20.1046 21.1046 21 20 21" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" />
+  <circle cx="16" cy="11.5" r="1.5" fill="#34D399" />
+  <circle cx="16" cy="16" r="1.5" fill="#38BDF8" />
+  <circle cx="16" cy="20.5" r="1.5" fill="#A78BFA" />
+  <line x1="16" y1="11.5" x2="16" y2="20.5" stroke="#475569" stroke-width="1" stroke-dasharray="1 1" />
+</svg>

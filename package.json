@@ -1,5 +1,5 @@
 {
-  "name": "10-json-explorer",
+  "name": "json-explorer",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,3 +24,4 @@
     "typescript": "^5"
   }
 }
+
