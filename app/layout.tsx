@@ -1,21 +1,34 @@
-import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import type { ReactNode } from 'react'
+import { Archivo, Fragment_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' })
+const sans = Archivo({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['500', '600', '700'],
+})
+
+const mono = Fragment_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: ['400'],
+})
 
 export const metadata: Metadata = {
-  title: 'JSON Explorer — Interactive JSON Inspector & Analyzer',
-  description: 'High-performance interactive JSON viewer, tree navigator, path copier, and validator. Inspect and search complex payloads with ease.',
+  title: 'JSON Explorer — structural JSON inspector',
+  description:
+    'Paste, upload, or drop JSON to explore it as a live structural diagram: expandable tree, path and value copying, search, and validation.',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const viewport: Viewport = {
+  themeColor: '#4f3ff0',
+}
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} ${mono.variable} bg-neutral-950 text-neutral-100 min-h-screen antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }
